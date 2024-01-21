@@ -26,6 +26,7 @@ entity "sds_column_definition" as col_def {
     --
     i18n : tinyint
     description : text
+    value_format : string
 }
 
 entity "sds_object_data" as obj_data {

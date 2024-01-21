@@ -45,7 +45,7 @@ class m230120_193700_sysple_data_system_init extends \yii\db\Migration
             'name' => $this->string()->notNull(),
             'code' => $this->string()->notNull(),
             'description' => $this->text(),
-            'i18n' => $this->tinyint()->defaultValue(0),
+            'i18n' => $this->tinyInteger()->defaultValue(0),
         ], $tableOptions);
 
         $this->createTableEx($this->tableColumnDefinition, [
@@ -54,7 +54,7 @@ class m230120_193700_sysple_data_system_init extends \yii\db\Migration
             'code' => $this->string()->notNull(),
             'type' => $this->string()->notNull(),
             'description' => $this->text(),
-            'i18n' => $this->tinyint()->defaultValue(0),
+            'i18n' => $this->tinyInteger()->defaultValue(0),
             'value_format' => $this->string(),
         ], $tableOptions);
 

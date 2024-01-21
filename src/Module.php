@@ -34,30 +34,25 @@ class Module extends \yii\base\Module
         }
     }
 
-    public function behaviors()
-    {
-        $behaviors = [];
-        if (! Yii::$app instanceof \yii\console\Application) {
-            $behaviors = [
-                'access' => [
-                    'class' => AccessControl::className(),
-                    'rules' => [
-                        [
-                            'allow' => true,
-                            'actions' => ['set-language'],
-                            'roles' => ['?'],
-                        ],
-                        [
-                            'allow' => true,
-                            'roles' => ['@'],
-                        ],
-                    ],
-                ],
-            ];
-        }
+    // public function behaviors()
+    // {
+    //     $behaviors = [];
+    //     if (! Yii::$app instanceof \yii\console\Application) {
+    //         $behaviors = [
+    //             'access' => [
+    //                 'class' => AccessControl::className(),
+    //                 'rules' => [
+    //                     [
+    //                         'allow' => true,
+    //                         'roles' => ['@'],
+    //                     ],
+    //                 ],
+    //             ],
+    //         ];
+    //     }
 
-        return $behaviors;
-    }
+    //     return $behaviors;
+    // }
 
     /**
      * Registeration translation files.
