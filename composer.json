@@ -1,0 +1,25 @@
+{
+    "name": "umbalaconmeogia/yii2-simple-data-system",
+    "description": "An easy system to define data object and manipulate data",
+    "type": "yii2-extension",
+    "keywords": [
+        "yii2",
+        "extension"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tran Trung Thanh",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": ">=2.0.6",
+		"umbalaconmeogia/yii2-batsg": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "umbalaconmeogia\\simpledatasystem\\": "src/"
+        }
+    }
+}
